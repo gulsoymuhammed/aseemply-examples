@@ -1,0 +1,27 @@
+﻿Input
+Store A
+Input
+Store B
+Input
+Store C
+Input
+Store D
+
+
+
+Load B
+Subt D
+Store second
+Load A
+Add  B
+Add C
+Subt second
+Output
+halt
+
+A, DEC 0
+B, DEC 0
+C, DEC 0
+D, DEC 0
+second,DEC 0
+END
