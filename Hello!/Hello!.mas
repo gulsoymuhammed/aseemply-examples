@@ -1,0 +1,34 @@
+﻿ORG 100
+Load Addr
+Store Next
+
+
+Loop,Clear
+AddI Next 
+Output
+Load Next
+Add one
+Store Next
+Load Count
+Subt one
+Store Count
+Skipcond 400 
+jump Loop
+Halt
+
+
+
+Next,DEC 0
+Addr, HEX 112
+Count,DEC 6
+one, DEC 1
+String,DEC 72
+DEC 101
+DEC 108
+DEC 108
+DEC 111
+DEC 33
+END
+		
+       
+

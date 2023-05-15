@@ -1,0 +1,34 @@
+﻿ORG 100
+Input
+Store X
+Input
+STORE Y
+Test1, Subt X
+	   Skipcond 000 //NEGATİVE X>Y
+       Jump  Test2
+       Load X
+       Output 
+       Load Y
+       Output
+	   Jump Done
+
+Test2,Skipcond 800 //acc positive
+      Jump XYeq
+	  Load Y
+      Output
+	  Load X
+      Output
+	  Jump Done
+ 
+
+XYeq, Load X
+	  Output
+      
+
+Done, Halt
+
+X, DEC 0
+Y, DEC 0
+
+       
+

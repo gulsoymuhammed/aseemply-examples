@@ -1,0 +1,12 @@
+﻿ORG 100
+NewVal,Input
+	   Store X
+       Subt TooBig
+       Skipcond 000
+       Jump NewVal
+Print,Load X
+	  Output 
+      Halt
+
+X,DEC 0
+TooBig,DEC 10

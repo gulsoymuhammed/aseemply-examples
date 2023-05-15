@@ -1,0 +1,15 @@
+﻿Load X
+Subt Y
+Skipcond 800
+Jump Next
+Load X
+Add Z
+Store X
+Output
+
+Next,Halt
+
+
+X,DEC 7
+Y,DEC 3
+Z,DEC 1

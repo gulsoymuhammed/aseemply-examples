@@ -1,0 +1,32 @@
+﻿Load  X
+Subt Y
+Skipcond 800 //X>Y
+Jump Else
+if,LOAD X
+   ADD one
+   Store X
+   Output
+   Jump Next
+
+      
+       
+Else,Load Y
+	 ADD one
+     Store Y
+     Output
+Next,Halt
+
+       
+ 
+
+XYeq, Load X
+	  Output
+      
+
+
+Done, Halt
+
+X, DEC 20
+Y, DEC 130
+one, DEC 1
+
