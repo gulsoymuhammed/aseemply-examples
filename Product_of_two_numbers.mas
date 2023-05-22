@@ -1,0 +1,33 @@
+﻿ORG 100
+Input
+Store X
+Input
+Store Y
+
+while,load num
+	  add X
+      store num
+      load Y
+      Subt one
+      store Y
+	  Skipcond 400
+      jump while
+
+Load num
+Output
+Halt
+
+	  
+      
+       
+print,load Y
+      Output
+	  Halt
+
+
+X, DEC 0
+Y, DEC 0
+num,DEC 0
+one,DEC 1
+
+

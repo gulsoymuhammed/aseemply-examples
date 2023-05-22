@@ -1,0 +1,29 @@
+﻿ORG 100
+
+
+
+loop, load count
+	  Skipcond 800 //acumalator>0
+      jump end
+      Input
+      Store num
+	  JnS Func
+      Jump loop
+end,Halt    
+Func,HEX 0
+	 Load num
+	 Output 
+	 load count
+     Subt one
+     store count
+	 JumpI Func
+
+
+
+
+num, DEC 0
+count,  DEC 3	//This can be changeable
+one, DEC 1
+
+       
+

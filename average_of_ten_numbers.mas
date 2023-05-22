@@ -1,0 +1,48 @@
+﻿ORG 100
+
+LOOP, Load X
+	  Subt TEN
+      Skipcond 000
+      Jump LOOP2
+      Clear
+	  Input
+	  ADD Y
+	  Store Y
+	  CLEAR 
+	  LOAD X
+	  ADD ONE
+	  STORE X
+	  CLEAR
+	  JUMP LOOP
+		
+
+LOOP2,Load Y
+	  Skipcond 800
+      Jump PRINT
+      Subt TEN
+      STORE Y 
+      CLEAR
+      LOAD AVR
+      ADD ONE
+      STORE AVR  /AVERAGE +=1
+      Clear
+	  JUMP LOOP2
+      
+PRINT,Load AVR
+	  Output
+
+Halt
+
+
+
+
+
+
+X, DEC 0
+Y, DEC 0
+TEN, DEC 10
+ONE,DEC 1
+AVR, DEC 0
+
+
+
